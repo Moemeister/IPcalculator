@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-
+    android:background="@color/dark"
     android:orientation="vertical"
     >
 
@@ -22,14 +22,14 @@
             android:inputType="number"
             android:maxLength="15"
             android:digits="0123456789."
-
+            android:textColor="@color/white"
             />
         <TextView
             android:id="@+id/pleca"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
-
+            android:textColor="@color/white"
             android:textSize="25sp"
             />
 
@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Network ID"
-
+            android:textColor="@color/white"
             android:textSize="20sp"/>
         <EditText
             android:id="@+id/txt_id_net"
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Broadcast"
-
+            android:textColor="@color/white"
             android:textSize="20sp"
 
             android:layout_below="@id/txt_id_net"/>
@@ -94,7 +94,7 @@
             >
             <TextView
                 android:id="@+id/cant_ip"
-
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Avaible IPs"
@@ -114,7 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/host_bits"
-
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:layout_below="@id/txt_cant_ip"
                 android:layout_centerHorizontal="true"/>
@@ -138,7 +138,7 @@
             android:layout_weight="1"
             >
             <TextView
-                
+                android:textColor="@color/white"
                 android:id="@+id/part_red"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
