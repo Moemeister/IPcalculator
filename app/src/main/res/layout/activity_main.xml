@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/caja_ip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:inputType="number"
+            android:maxLength="15"
+            android:digits="0123456789."
+
+            />
+        <TextView
+            android:id="@+id/pleca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/mascara"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:maxLength="2"
+            android:digits="0123456789."
+            />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lbl_id_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network ID"
+
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/txt_id_net"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:layout_below="@+id/lbl_id_net"/>
+        <TextView
+            android:id="@+id/lbl_broad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broadcast"
+
+            android:textSize="20sp"
+
+            android:layout_below="@id/txt_id_net"/>
+        <EditText
+            android:id="@+id/txt_broad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:layout_below="@+id/lbl_broad"
+
+            />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/cant_ip"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avaible IPs"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:id="@+id/txt_cant_ip"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cant_ip"
+                android:enabled="false"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/lbl_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/host_bits"
+
+                android:textSize="20sp"
+                android:layout_below="@id/txt_cant_ip"
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:id="@+id/txt_part_host"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_part"
+                android:enabled="false"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                
+                android:id="@+id/part_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network Bits"
+                android:textSize="20sp"
+
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:id="@+id/txt_part_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@id/part_red"
+                android:enabled="false"
+                android:layout_centerHorizontal="true"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_part_red"
+                android:layout_centerHorizontal="true"
+                android:background="@color/skyblue"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/calculate"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:onClick="calculate"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

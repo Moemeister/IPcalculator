@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IP</string>
+    <string name="calculate">Calculate</string>
+    <string name="host_bits">Host Bits</string>
+</resources>
